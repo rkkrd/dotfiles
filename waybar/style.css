@@ -75,6 +75,7 @@ button:hover {
 #pulseaudio,
 #bluetooth,
 #network,
+#custom-vpn,
 #memory,
 #cpu,
 #temperature,
@@ -110,6 +111,21 @@ button:hover {
 
 #custom-kernel {
     background-color: @rosewater;
+    color: @mantle;
+}
+
+#custom-vpn {
+    background-color: @overlay1;
+    color: @mantle;
+}
+
+#custom-vpn.disconnected {
+    background-color: @red;
+    color: @mantle;
+}
+
+#custom-vpn.connected {
+    background-color: @green;
     color: @mantle;
 }
 
