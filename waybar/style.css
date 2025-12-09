@@ -115,22 +115,12 @@ button:hover {
 }
 
 #custom-vpn {
-    background-color: @overlay1;
-    color: @mantle;
-}
-
-#custom-vpn.disconnected {
-    background-color: @red;
-    color: @mantle;
-}
-
-#custom-vpn.connected {
-    background-color: @green;
+    background-color: @yellow;
     color: @mantle;
 }
 
 #clock {
-    background-color: @green;
+    background-color: @teal;
     color: @mantle;
 }
 
@@ -178,7 +168,7 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: @yellow;
+    background-color: @green;
     color: @mantle;
 }
 

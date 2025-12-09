@@ -164,10 +164,9 @@
     "custom/vpn": {
 	"interval": 1,
 	"format": "{}",
-	"exec": "sh -c 'if mullvad status | grep -q Connected; then echo \"{\\\"text\\\": \\\"Connected \\\", \\\"class\\\": \\\"connected\\\"}\"; else echo \"{\\\"text\\\": \\\"Disconnected \\\", \\\"class\\\": \\\"disconnected\\\"}\"; fi'",
-	"on-click": "sh -c 'mullvad status | grep -q Connected && mullvad disconnect || mullvad connect'",
+	"exec": "mullvad status | grep -q Connected && echo 'Connected ' || echo 'Disconnected '",
+	"on-click": "mullvad status | grep -q Connected && mullvad disconnect || mullvad connect",
 	"on-click-right": "mullvad reconnect",
-	"return-type": "json",
     },
     "custom/weather": {
         "interval": 600,
