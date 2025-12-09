@@ -23,6 +23,7 @@
     "memory",
     "bluetooth",
     "network",
+    "custom/vpn",
     "pulseaudio",
     "clock",
     "custom/weather"
@@ -160,9 +161,17 @@
         "format-linked": "(No IP) ",
         "format-disconnected": "Disconnected ⚠"
     },
+    "custom/vpn": {
+	"interval": 1,
+	"format": "{}",
+	"exec": "sh -c 'if mullvad status | grep -q Connected; then echo \"{\\\"text\\\": \\\"Connected \\\", \\\"class\\\": \\\"connected\\\"}\"; else echo \"{\\\"text\\\": \\\"Disconnected \\\", \\\"class\\\": \\\"disconnected\\\"}\"; fi'",
+	"on-click": "sh -c 'mullvad status | grep -q Connected && mullvad disconnect || mullvad connect'",
+	"on-click-right": "mullvad reconnect",
+	"return-type": "json",
+    },
     "custom/weather": {
         "interval": 600,
-        "exec": "~/.config/waybar/wittr.sh nyiregyhaza",
+        "exec": "~/.config/waybar/wittr.sh manila",
         "return-type": "json",
         "format": "{}",
         "tooltip": true
