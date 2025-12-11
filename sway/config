@@ -238,11 +238,11 @@ set $focusedColor #b4befe
 set $nonfocus #9399b2
 set $urgent #eba0ac
 default_border pixel 2 
-client.focused $focusedColor $focusedColor $focusedColor #89b4fa
+client.focused $focusedColor $focusedColor $focusedColor $focusedColor $focusedColor
 
-client.unfocused $nonfocus $nonfocus $nonfocus
-client.urgent $urgent $urgent $urgent
-client.focused_inactive $nonfocus $nonfocus $nonfocus
+client.unfocused $nonfocus $nonfocus $nonfocus $nonfocus $nonfocus
+client.urgent $urgent $urgent $urgent $urgent $urgent
+client.focused_inactive $nonfocus $nonfocus $nonfocus $nonfocus $nonfocus
 
 #apply wdisplay settings
 output eDP-1 scale 1.3 position 0 0 enable
