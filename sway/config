@@ -16,7 +16,7 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty
 # Your preferred application launcher
-set $menu "kill wofi || wofi"
+set $menu "pkill wofi || wofi"
 
 include /etc/sway/config-vars.d/*
 
@@ -228,8 +228,7 @@ bar {
 }
 
 # set wallpaper
-exec swaybg -o "*" -i ~/Pictures/noellepaper.jpeg -m fill
-exec_always swaybg -o "*" -i ~/Pictures/noellepaper.jpeg -m fill
+exec swaybg -o "*" -i /home/rekkord/Pictures/noellepaper.jpeg -m fill
 
 # remove titlebars
 for_window [all] titlebars_enabled = false
@@ -261,5 +260,14 @@ gaps inner 4
 
 #screenshot to clipboard
 bindsym Control+Print exec grim -g "$(slurp -d)" - | wl-copy -t image/png
+
+#open lockscreen
+bindsym $mod+Alt+l exec swaylock
+
+#launch bemoji
+bindsym $mod+Period exec bemoji -t
+
+#record to file
+bindsym $mod+Shift+p exec wf-recorder -g "$(slurp -d)" --audio="alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo.monitor" --file="~/Videos/screenrecordings/recording_$(date +%Y-%m-%d_%H-%M-%S).mp4"
 
 include /etc/sway/config.d/*
