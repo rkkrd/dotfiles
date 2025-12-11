@@ -123,12 +123,12 @@
     "cpu": {
         "interval": 3,
         "format": "{usage}% ",
-        "on-click": "alacritty htop",
+        "on-click": "alacritty -e htop",
     },
     "memory": {
         "interval": 3,
         "format": "{}% ",
-        "on-click": "alacritty htop",
+        "on-click": "alacritty -e htop",
         "tooltip-format": "Used: {used:0.1f}G/{total:0.1f}G. Swap: {swapUsed:0.1f}G/{swapTotal:0.1f}G",
         "states": {
             "critical": 80
@@ -166,7 +166,7 @@
 	"format": "{}",
 	"exec": "mullvad status | grep -q Connected && echo 'Connected ' || echo 'Disconnected '",
 	"on-click": "mullvad status | grep -q Connected && mullvad disconnect || mullvad connect",
-	"on-click-right": "mullvad reconnect",
+	"on-click-right": "mullvad reconnect"
     },
     "custom/weather": {
         "interval": 600,
@@ -177,7 +177,7 @@
     },
     "custom/kernel": {
         "exec": "uname -r | sed -E 's/^([0-9]+\\.[0-9]+\\.[0-9]+)-.*-([a-zA-Z0-9]+)/\\1-\\2/'",
-        "format": "{} 󰣚"
+        "format": "{} "
     },
     "pulseaudio": {
         "scroll-step": 2,
@@ -195,6 +195,6 @@
             "portable": "",
             "car": "",
         },
-        "on-click": "alacritty pulsemixer"
+        "on-click": "alacritty -e ~/pulsemixer"
     },
 }
