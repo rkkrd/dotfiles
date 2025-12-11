@@ -268,6 +268,6 @@ bindsym $mod+Alt+l exec swaylock
 bindsym $mod+Period exec bemoji -t
 
 #record to file
-bindsym $mod+Shift+p exec wf-recorder -g "$(slurp -d)" --audio="alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo.monitor" --file="~/Videos/screenrecordings/recording_$(date +%Y-%m-%d_%H-%M-%S).mp4"
+bindsym $mod+Shift+p exec wf-recorder -g "$(slurp -d)" --audio="alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo.monitor" --file="$HOME/Videos/screenrecordings/recording_$(date +%Y-%m-%d_%H-%M-%S).mp4"
 
 include /etc/sway/config.d/*
