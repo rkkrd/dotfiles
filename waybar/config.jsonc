@@ -26,7 +26,8 @@
     "custom/vpn",
     "pulseaudio",
     "clock",
-    "custom/weather"
+    "custom/weather",
+    "battery"
     ],
     
      "sway/workspaces": {
@@ -197,4 +198,14 @@
         },
         "on-click": "alacritty -e ~/pulsemixer"
     },
+    "battery": {
+	"format": "{capacity}% {icon}",
+	"format-icons": ["", "", "", "", ""],
+	"tooltip-format": "{timeTo}, Click to logout",
+	"states": {
+		"low": 30,
+		"critical": 10
+	},
+	"on-click": "swaynag -t warning -m 'Would you like to exit Sway?' -B 'exit' 'swaymsg exit'"
+    }
 }

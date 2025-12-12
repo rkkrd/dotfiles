@@ -84,6 +84,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #mode,
+#battery,
 #tray {
     padding: 0 10px;
     margin: 5px 1px;
@@ -227,3 +228,17 @@ label:focus {
 #scratchpad.empty {
     background-color: transparent;
 }
+
+#battery {
+    background-color: @sky;
+    color: @mantle;
+}
+
+#battery.low {
+    background-color: orange;
+}
+
+#battery.critical {
+    background-color: red;
+}
+
