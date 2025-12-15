@@ -193,6 +193,7 @@ label:focus {
 #mpris {
     background-color: @base;
     color: @text;
+    font-style: italic;
 }
 
 #tray {
