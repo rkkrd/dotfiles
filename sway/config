@@ -262,10 +262,13 @@ gaps inner 4
 bindsym Control+Print exec grim -g "$(slurp -d)" - | wl-copy -t image/png
 
 #open lockscreen
-bindsym $mod+Alt+l exec swaylock
+bindsym $mod+Alt+l exec gtklock -c "/home/.config/gtklock/config.ini"
 
 #launch bemoji
 bindsym $mod+Period exec bemoji -t
+
+# open yazi 
+bindsym $mod+F1 exec yazi
 
 #record to file
 bindsym $mod+Shift+p exec wf-recorder -g "$(slurp -d)" --audio="alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo.monitor" --file="$HOME/Videos/screenrecordings/recording_$(date +%Y-%m-%d_%H-%M-%S).mp4"
