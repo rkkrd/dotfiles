@@ -268,7 +268,10 @@ bindsym $mod+Alt+l exec gtklock -c "/home/.config/gtklock/config.ini"
 bindsym $mod+Period exec bemoji -t
 
 # open yazi 
-bindsym $mod+F1 exec yazi
+bindsym $mod+F1 exec alacritty -e yazi
+
+#set bibata cursors
+seat seat0 xcursor_theme Bibata-Modern-Classic 24
 
 #record to file
 bindsym $mod+Shift+p exec wf-recorder -g "$(slurp -d)" --audio="alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo.monitor" --file="$HOME/Videos/screenrecordings/recording_$(date +%Y-%m-%d_%H-%M-%S).mp4"
