@@ -121,7 +121,6 @@ button:hover {
 }
 
 #clock {
-    /*background-color: @teal;*/
     background-color: @sky;
     color: @mantle;
 }
@@ -138,14 +137,12 @@ label:focus {
 }
 
 #cpu {
-    /*background-color: @mauve;*/
     background-color: @red;
     color: @mantle;
     min-width: 45px;
 }
 
 #memory {
-    /*background-color: @red;*/
     background-color: @peach;
     color: @mantle;
 }
@@ -156,7 +153,6 @@ label:focus {
 }
 
 #network {
-    /*background-color: @peach;*/
     background-color: @yellow;
     color: @mantle;
 }
@@ -235,8 +231,7 @@ label:focus {
 }
 
 #battery {
-    /*background-color: @sky;*/
-    background-color: @blue;
+    background-color: @sky;
     color: @mantle;
 }
 
@@ -247,4 +242,12 @@ label:focus {
 #battery.critical {
     background-color: red;
 }
+
+/* Reduced Modules Style */
+#cpu {background-color: @red}
+#memory {background-color: @peach}
+#network {background-color: @yellow}
+#pulseaudio {background-color: @green}
+#clock {background-color: @sky}
+#battery {background-color: @blue}
 
