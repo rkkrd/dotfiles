@@ -268,7 +268,7 @@ bindsym $mod+Alt+l exec gtklock -c "/home/.config/gtklock/config.ini"
 bindsym $mod+Period exec bemoji -t
 
 # open yazi 
-bindsym $mod+F1 exec alacritty -e yazi
+bindsym $mod+F1 exec $term -e yazi
 
 #set bibata cursors
 seat seat0 xcursor_theme Bibata-Modern-Classic 24
