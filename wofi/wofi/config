@@ -1,0 +1,9 @@
+mode=drun,run
+run-always_parse_args=true
+term=alacritty
+hide_scroll=true
+insensitive=true
+prompt=[ ˶ᵔ ᵕ ᵔ˶ ]
+height=40%
+width=40%
+no_actions=true
