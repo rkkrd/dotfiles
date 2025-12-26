@@ -1,0 +1,15 @@
+max-history=3
+max-visible=3
+
+font=JetBrainsMono Nerd Font Regular 10
+width=300
+height=50
+border-color=#313244d9
+background-color=#1e1e2ed9
+text-color=#cdd6f4
+max-icon-size=32
+
+default-timeout=5000
+
+padding=5,10
+
