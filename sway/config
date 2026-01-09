@@ -284,4 +284,17 @@ exec mako
 #for macropad
 bindsym F20 exec $HOME/pulsemixer --toggle-mute 
 
+bindsym XF86Launch5 exec $term -e nvim
+
+bindsym XF86TouchpadToggle exec sh -c '\
+if mullvad status | grep -q Connected; then \
+  mullvad disconnect && notify-send "Mullvad" "Disconnected" -i network-offline; \
+else \
+  mullvad connect && notify-send "Mullvad" "Connected" -i network-vpn; \
+fi'
+
+bindsym XF86Launch6 exec playerctl next
+
+bindsym XF86Launch7 exec playerctl play-pause 
+
 include /etc/sway/config.d/*
