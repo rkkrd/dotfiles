@@ -281,4 +281,7 @@ bindsym $mod+Shift+Alt+p exec pkill -INT -x wf-recorder
 #Mako notification daemon
 exec mako
 
+#for macropad
+bindsym F20 exec $HOME/pulsemixer --toggle-mute 
+
 include /etc/sway/config.d/*
