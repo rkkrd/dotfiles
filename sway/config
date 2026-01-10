@@ -297,4 +297,10 @@ bindsym XF86Launch6 exec playerctl next
 
 bindsym XF86Launch7 exec playerctl play-pause 
 
+bindsym XF86Launch8 exec playerctl volume 0.1-
+
+bindsym XF86Launch9 exec playerctl volume 0.1+
+
+# bindsym XF86TouchpadOn exec $HOME/.config/sway/vesktop-togglemuteunmute.sh
+
 include /etc/sway/config.d/*
