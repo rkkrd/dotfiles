@@ -15,15 +15,15 @@
     ],
     "modules-right": [
     "sway/scratchpad",
-    "idle_inhibitor",
-    "custom/kernel",
-    "disk#ssd",
-    "temperature",
+    //"idle_inhibitor",
+    //"custom/kernel",
+    //"disk#ssd",
+    //"temperature",
     "cpu",
     "memory",
-    "bluetooth",
+    //"bluetooth",
     "network",
-    "custom/vpn",
+    //"custom/vpn",
     "pulseaudio",
     "clock",
     "custom/weather",
@@ -61,18 +61,18 @@
         "format": "<span style=\"italic\">{}</span>"
     },
     "mpris": {
-        "interval": 15,
+        "interval": 3,
     	"format": "{player_icon} {dynamic}",
     	"format-paused": "{status_icon} <i>{dynamic}</i>",
     	"dynamic-order": ["artist", "title"],
     	"player-icons": {
-            "default": "▶",
-            "firefox": "▶",
+            "default": "⏸",
+            "firefox": "⏸",
             "tidal-hifi": "🎵",
             "cmus": "🎵"
     	},
     	"status-icons": {
-            "paused": "⏸"
+            "paused": "▶"
         },
         // "ignored-players": ["cmus"]
     },
