@@ -1,4 +1,4 @@
-@import url("~/.config/wofi/colors.css");
+/*@import url("~/.config/wofi/colors.css");*/
 /* fallback */
 @define-color rosewater #f5e0dc;
 @define-color flamingo #f2cdcd;
@@ -32,39 +32,34 @@
   border: 0;
   margin: 0;
   padding: 0;
-  spacing: 0;
   font-family: "JetBrainsMono Nerd Font";
   font-weight: normal;
 }
 
-window {
-   background-color: @mantle;
+#window {
+   background-color: rgba(24, 24, 37, 0.85);
+}
+
+#outer-box {
+  border: 2px solid @lavender;
 }
 
 #input {
-   background-color: @mantle;
+   background-color: @base;
+   border-bottom: 2px solid @lavender;
+   border-radius: 0
 }
 
 #input > image.left {
    -gtk-icon-transform:scaleX(0);
 }
 
-#outer-box {
-   background-color: @mantle;
-}
-
 #entry {
-   padding: 5 5
+   padding: 5px 3px;
+   color: @text;
 }
 
 #entry:selected {
    background-color: @lavender;
-}
-
-#entry image img {
-   display: none;
-}
-
-#img #image {
-   display: none;
+   color: @mantle;
 }

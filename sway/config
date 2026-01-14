@@ -303,4 +303,8 @@ bindsym XF86Launch9 exec playerctl volume 0.1+
 
 # bindsym XF86TouchpadOn exec $HOME/.config/sway/vesktop-togglemuteunmute.sh
 
+#polkits
+exec /usr/lib/polkit-1/polkit-agent-helper-1
+exec /usr/libexec/kf6/polkit-kde-authentication-agent-1
+
 include /etc/sway/config.d/*
