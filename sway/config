@@ -259,8 +259,7 @@ bindsym $mod+Delete scratchpad show
 gaps inner 4
 
 #screenshot to clipboard
-bindsym Control+Print exec grim -g "$(slurp -d)" - | wl-copy -t image/png
-
+bindsym Control+Print exec bindsym Control+Print exec grim -g "$(slurp -d)" /tmp/screenshot.png && ./zipline-script-file.sh /tmp/screenshot.png
 #open lockscreen
 bindsym $mod+Alt+l exec gtklock -c "/home/.config/gtklock/config.ini"
 
@@ -306,5 +305,8 @@ bindsym XF86Launch9 exec playerctl volume 0.1+
 #polkits
 exec /usr/lib/polkit-1/polkit-agent-helper-1
 exec /usr/libexec/kf6/polkit-kde-authentication-agent-1
+
+# root window
+exec wmname LG3D &
 
 include /etc/sway/config.d/*

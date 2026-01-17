@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -H "authorization: MTc2ODYyMjY1NTMxOA==.ZWE0NDlkMmIxNWEyZjdkZWNkNGI1Y2ZkLjVkZDNhZDBiODMxNzM2MDQ1YmYyNzViMjJkNTRhOGUxNDA3NDIyOTI1YTc0YWVjNTcxODY0YjJlMjYxMDcyY2QxNTk2ZTMwZTAzMWNiNTZlYzUyY2I0ZmE2NzJlZTlkNjc0MjAwM2VmMGJlOTNkYWQ3YjFmN2IzOGI3NzQ5YmE3M2MuMjlkMmRjMWZiZTQ1NGI4ZWJlNzAzNDk5YzgzMWE5ZTA=" https://vault.rekkord.cc/api/upload -F "file=@$1;type=$(file --mime-type -b "$1")" -H 'content-type: multipart/form-data' | jq -r .files[0].url | wl-copy
