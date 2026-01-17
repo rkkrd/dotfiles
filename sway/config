@@ -259,7 +259,7 @@ bindsym $mod+Delete scratchpad show
 gaps inner 4
 
 #screenshot to clipboard
-bindsym Control+Print exec bindsym Control+Print exec grim -g "$(slurp -d)" /tmp/screenshot.png && ./zipline-script-file.sh /tmp/screenshot.png
+bindsym Control+Print exec grim -g "$(slurp -d)" /tmp/screenshot.png && ./zipline-script-file.sh /tmp/screenshot.png
 #open lockscreen
 bindsym $mod+Alt+l exec gtklock -c "/home/.config/gtklock/config.ini"
 
