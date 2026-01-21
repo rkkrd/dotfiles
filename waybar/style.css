@@ -2,8 +2,10 @@
 
 * {
     border: none;
-    border-radius: 1px;
-    font-family: JetBrainsMono Nerd Font, Font Awesome;
+    /*border-radius: 1px;*/
+    font-family:
+        JetBrainsMono Nerd Font,
+        Font Awesome;
     font-weight: bold;
     font-size: 13px;
     min-height: 0;
@@ -51,7 +53,7 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: @overlay0;
+    background-color: @surface2;
     box-shadow: inset 0 -3px @lavender;
 }
 
@@ -60,7 +62,7 @@ button:hover {
 }
 
 #taskbar button.active {
-    background-color: @surface1;
+    background-color: @text;
 }
 
 #mode {
@@ -86,8 +88,8 @@ button:hover {
 #mode,
 #battery,
 #tray {
-    padding: 0 10px;
-    margin: 5px 1px;
+    padding: 0 8px;
+    margin: /*5*/ 0px 1px;
     color: @text;
 }
 
@@ -113,6 +115,7 @@ button:hover {
 #custom-kernel {
     background-color: @rosewater;
     color: @mantle;
+    box-shadow: inset 0 -3px @rosewater;
 }
 
 #custom-vpn {
@@ -191,14 +194,15 @@ label:focus {
 }
 
 #mpris {
-    background-color: @base;
-    color: @text;
+    background-color: @mantle;
+    color: @subtext0;
     font-style: italic;
 }
 
 #tray {
-    background-color: @overlay0;
+    background-color: @mantle;
     color: @text;
+    padding: 0 3px;
 }
 
 #tray > .passive {
@@ -222,8 +226,8 @@ label:focus {
 }
 
 #scratchpad {
-    background-color: @base;
-    color: @text;
+    background-color: @mantle;
+    color: @rosewater;
 }
 
 #scratchpad.empty {
@@ -244,10 +248,33 @@ label:focus {
 }
 
 /* Reduced Modules Style */
-#cpu {background-color: @red}
-#memory {background-color: @peach}
-#network {background-color: @yellow}
-#pulseaudio {background-color: @green}
-#clock {background-color: @sky}
-#battery {background-color: @blue}
-
+#cpu {
+    background-color: @mantle;
+    color: @red;
+    box-shadow: inset 0 -3px @red;
+}
+#memory {
+    background-color: @mantle;
+    color: @peach;
+    box-shadow: inset 0 -3px @peach;
+}
+#network {
+    background-color: @mantle;
+    color: @yellow;
+    box-shadow: inset 0 -3px @yellow;
+}
+#pulseaudio {
+    background-color: @mantle;
+    color: @green;
+    box-shadow: inset 0 -3px @green;
+}
+#clock {
+    background-color: @mantle;
+    color: @sky;
+    box-shadow: inset 0 -3px @sky;
+}
+#battery {
+    background-color: @mantle;
+    box-shadow: inset 0 -3px @blue;
+    color: @blue;
+}
