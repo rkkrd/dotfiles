@@ -119,14 +119,14 @@
   "cpu": {
     "interval": 3,
     "format": "{usage}% ",
-    "on-click": "alacritty -e htop",
+    "on-click": "kitty -e htop",
     "justify": "center",
     "align": "0.5",
   },
   "memory": {
     "interval": 3,
     "format": "{}% ",
-    "on-click": "alacritty -e htop",
+    "on-click": "kitty -e htop",
     "tooltip-format": "Used: {used:0.1f}G/{total:0.1f}G. Swap: {swapUsed:0.1f}G/{swapTotal:0.1f}G",
     "states": {
       "critical": 80,
@@ -197,7 +197,7 @@
       "portable": "",
       "car": "",
     },
-    "on-click": "alacritty -e ~/pulsemixer",
+    "on-click": "kitty -e ~/pulsemixer",
     "justify": "center",
     "align": "0.5",
   },
