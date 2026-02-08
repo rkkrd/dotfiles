@@ -235,7 +235,7 @@ for_window [all] titlebars_enabled = false
 
 # set focused window border w/ color
 set $focusedColor #b4befe
-set $nonfocus #9399b2
+set $nonfocus #6c7086
 set $urgent #eba0ac
 default_border pixel 2 
 client.focused $focusedColor $focusedColor $focusedColor $focusedColor $focusedColor
@@ -260,7 +260,7 @@ gaps inner 4
 
 #screenshot to clipboard
 bindsym Control+Print exec grim -g "$(slurp -d)" - | wl-copy -t "image/png" && notify-send "Screenshot" "Saved to Clipboard"
-bindsym Control+Shift_L+Print exec grim -g "$(slurp -d)" /tmp/screenshot.png && $HOME/.config/sway/zipline-script-file.sh /tmp/screenshot.png && notify-send "Screenshot" "Saved to Vault"
+bindsym Control+Shift+Print exec grim -g "$(slurp -d)" /tmp/screenshot.png && $HOME/.config/sway/zipline-script-file.sh /tmp/screenshot.png && notify-send "Screenshot" "Saved to Vault"
 #open lockscreen
 bindsym $mod+Alt+l exec gtklock -c "/home/.config/gtklock/config.ini"
 
