@@ -223,12 +223,12 @@ bar {
     position top
 
     # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.   
+    # The default just shows the current date and time.
     # status_command while date +'%Y-%m-%d %X'; do sleep 1; done
 }
 
 # set wallpaper
-exec swaybg -o "*" -i /home/rekkord/Pictures/noellepaper.jpeg -m fill
+exec swaybg -o "*" -i /home/rekkord/Pictures/lavenderkitty.png -m fill
 
 # remove titlebars
 for_window [all] titlebars_enabled = false
@@ -237,12 +237,11 @@ for_window [all] titlebars_enabled = false
 set $focusedColor #b4befe
 set $nonfocus #6c7086
 set $urgent #eba0ac
-default_border pixel 2 
-client.focused $focusedColor $focusedColor $focusedColor $focusedColor $focusedColor
+default_border none
+default_floating_border none
+default_dim_inactive 0.3
+dim_inactive_colors.unfocused #11111b
 
-client.unfocused $nonfocus $nonfocus $nonfocus $nonfocus $nonfocus
-client.urgent $urgent $urgent $urgent $urgent $urgent
-client.focused_inactive $nonfocus $nonfocus $nonfocus $nonfocus $nonfocus
 
 #apply wdisplay settings
 output eDP-1 scale 1.3 position 0 0 enable
@@ -260,14 +259,14 @@ gaps inner 4
 
 #screenshot to clipboard
 bindsym Control+Print exec grim -g "$(slurp -d)" - | wl-copy -t "image/png" && notify-send "Screenshot" "Saved to Clipboard"
-bindsym Control+Shift+Print exec grim -g "$(slurp -d)" /tmp/screenshot.png && $HOME/.config/sway/zipline-script-file.sh /tmp/screenshot.png && notify-send "Screenshot" "Saved to Vault"
+bindsym Control+Shift+Print exec grim -g "$(slurp -d)" | /tmp/screenshot.png && $HOME/.config/sway/zipline-script-file.sh /tmp/screenshot.png && notify-send "Screenshot" "Saved to Vault"
 #open lockscreen
 bindsym $mod+Alt+l exec gtklock -c "/home/.config/gtklock/config.ini"
 
 #launch bemoji
 bindsym $mod+Period exec bemoji -t -c -n
 
-# open yazi 
+# open yazi
 bindsym $mod+F1 exec $term -e yazi
 
 #set bibata cursors
@@ -282,7 +281,7 @@ bindsym $mod+Shift+Alt+p exec pkill -INT -x wf-recorder
 exec mako
 
 #for macropad
-bindsym F20 exec $HOME/pulsemixer --toggle-mute 
+bindsym F20 exec $HOME/pulsemixer --toggle-mute
 
 bindsym XF86Launch5 exec $term -e nvim
 
@@ -295,7 +294,7 @@ fi'
 
 bindsym XF86Launch6 exec playerctl next
 
-bindsym XF86Launch7 exec playerctl play-pause 
+bindsym XF86Launch7 exec playerctl play-pause
 
 bindsym XF86Launch8 exec playerctl volume 0.1-
 

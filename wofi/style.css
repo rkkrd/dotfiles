@@ -29,37 +29,38 @@
 /* fallback end */
 
 * {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  font-family: "JetBrainsMono Nerd Font";
-  font-weight: normal;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: normal;
 }
 
 #window {
-   background-color: rgba(24, 24, 37, 0.85);
+    background-color: @mantle;
 }
 
 #outer-box {
-  border: 2px solid @lavender;
+    border: 2px solid @lavender;
+    outline: 20px solid @mantle;
 }
 
 #input {
-   background-color: @base;
-   border-bottom: 2px solid @lavender;
-   border-radius: 0
+    background-color: @base;
+    border-bottom: 2px solid @lavender;
+    border-radius: 0;
 }
 
 #input > image.left {
-   -gtk-icon-transform:scaleX(0);
+    -gtk-icon-transform: scaleX(0);
 }
 
 #entry {
-   padding: 5px 3px;
-   color: @text;
+    padding: 5px 3px;
+    color: @surface2;
 }
 
 #entry:selected {
-   background-color: @lavender;
-   color: @mantle;
+    background-color: @lavender;
+    color: @mantle;
 }

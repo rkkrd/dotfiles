@@ -43,6 +43,45 @@ button:hover {
 #workspaces button {
     padding: 0 5;
     background-color: @mantle;
+}
+
+#workspaces button:nth-child(1) {
+    color: @red;
+}
+
+#workspaces button:nth-child(2) {
+    color: @peach;
+}
+
+#workspaces button:nth-child(3) {
+    color: @yellow;
+}
+
+#workspaces button:nth-child(4) {
+    color: @green;
+}
+
+#workspaces button:nth-child(5) {
+    color: @blue;
+}
+
+#workspaces button:nth-child(6) {
+    color: @mauve;
+}
+
+#workspaces button:nth-child(7) {
+    color: @flamingo;
+}
+
+#workspaces button:nth-child(8) {
+    color: @lavender;
+}
+
+#workspaces button:nth-child(9) {
+    color: @pink;
+}
+
+#workspaces button:nth-child(10) {
     color: @text;
 }
 
@@ -53,8 +92,48 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: @surface2;
+    background-color: @surface0;
+    border-radius: 0;
+}
+
+#workspaces button.focused:nth-child(1) {
+    box-shadow: inset 0 -2px @red;
+}
+
+#workspaces button.focused:nth-child(2) {
+    box-shadow: inset 0 -2px @peach;
+}
+
+#workspaces button.focused:nth-child(3) {
+    box-shadow: inset 0 -2px @yellow;
+}
+
+#workspaces button.focused:nth-child(4) {
+    box-shadow: inset 0 -2px @green;
+}
+
+#workspaces button.focused:nth-child(5) {
+    box-shadow: inset 0 -2px @blue;
+}
+
+#workspaces button.focused:nth-child(6) {
+    box-shadow: inset 0 -2px @mauve;
+}
+
+#workspaces button.focused:nth-child(7) {
+    box-shadow: inset 0 -2px @flamingo;
+}
+
+#workspaces button.focused:nth-child(8) {
     box-shadow: inset 0 -2px @lavender;
+}
+
+#workspaces button.focused:nth-child(9) {
+    box-shadow: inset 0 -2px @pink;
+}
+
+#workspaces button.focused:nth-child(10) {
+    box-shadow: inset 0 -2px @text;
 }
 
 #workspaces button.urgent {
@@ -248,33 +327,32 @@ label:focus {
 }
 
 /* Reduced Modules Style */
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#clock,
+#battery {
+    background-color: @surface0;
+    color: transparent;
+    margin: 5px 2px;
+    padding: 0;
+}
 #cpu {
-    background-color: @mantle;
     color: @red;
-    box-shadow: inset 0 -2px @red;
 }
 #memory {
-    background-color: @mantle;
     color: @peach;
-    box-shadow: inset 0 -2px @peach;
 }
 #network {
-    background-color: @mantle;
     color: @yellow;
-    box-shadow: inset 0 -2px @yellow;
 }
 #pulseaudio {
-    background-color: @mantle;
     color: @green;
-    box-shadow: inset 0 -2px @green;
 }
 #clock {
-    background-color: @mantle;
     color: @sky;
-    box-shadow: inset 0 -2px @sky;
 }
 #battery {
-    background-color: @mantle;
-    box-shadow: inset 0 -2px @blue;
     color: @blue;
 }

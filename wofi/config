@@ -1,9 +1,9 @@
 mode=drun,run
 run-always_parse_args=true
-term=alacritty
+term=kitty
 hide_scroll=true
 insensitive=true
-prompt=[ ˶ᵔ ᵕ ᵔ˶ ]
-height=40%
+prompt=ᓚᘏᗢ
+height=20%
 width=40%
 no_actions=true
