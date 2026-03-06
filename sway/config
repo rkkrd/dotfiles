@@ -228,20 +228,19 @@ bar {
 }
 
 # set wallpaper
-exec swaybg -o "*" -i /home/rekkord/Pictures/lavenderkitty.png -m fill
-
-# remove titlebars
-for_window [all] titlebars_enabled = false
+exec swaybg -o "*" -i /home/rekkord/Pictures/corrected-noellepaper.png -m fill
 
 # set focused window border w/ color
 set $focusedColor #b4befe
 set $nonfocus #6c7086
 set $urgent #eba0ac
-default_border none
-default_floating_border none
-default_dim_inactive 0.3
-dim_inactive_colors.unfocused #11111b
-
+default_border pixel 2px
+default_floating_border pixel 2px
+# class                 border  background text   indicator child_border
+client.focused          #b4befe #b4befe #b4befe
+client.focused_inactive #313244 #313244 #313244
+client.unfocused        #313244 #313244 #313244
+client.urgent           #f38ba8 #f38ba8 #f38ba8
 
 #apply wdisplay settings
 output eDP-1 scale 1.3 position 0 0 enable

@@ -90,7 +90,7 @@
   "clock": {
     "interval": 60,
     "timezone": "Asia/Philippines",
-    "format": "<span background='#89dceb' foreground='#181825'> CLK </span> {:%I:%M %p} ", //
+    "format": "<span background='#89b4fa' foreground='#181825'> CLK </span> {:%I:%M %p} ", //
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "month",
@@ -202,7 +202,7 @@
     "align": "0.5",
   },
   "battery": {
-    "format": "<span background='#89b4fa' foreground='#181825'> BAT </span> {capacity}% ",
+    "format": "<span background='#89dceb' foreground='#181825'> BAT </span> {capacity}% ",
     "format-icons": ["", "", "", "", ""],
     "tooltip-format": "{timeTo}, Click to logout",
     "states": {
