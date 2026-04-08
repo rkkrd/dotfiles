@@ -257,7 +257,7 @@ bindsym $mod+Delete scratchpad show
 gaps inner 4
 
 #screenshot to clipboard
-bindsym Control+Print exec grim -g "$(slurp -d)" - | wl-copy -t "image/png" && notify-send "Screenshot" "Saved to Clipboard"
+bindsym Control+Print exec still -p -c 'grim -g "$(slurp -d)" -' | satty -f -
 bindsym Control+Shift+Print exec grim -g "$(slurp -d)" | /tmp/screenshot.png && $HOME/.config/sway/zipline-script-file.sh /tmp/screenshot.png && notify-send "Screenshot" "Saved to Vault"
 #open lockscreen
 bindsym $mod+Alt+l exec gtklock -c "/home/.config/gtklock/config.ini"

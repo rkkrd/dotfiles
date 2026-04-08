@@ -1,0 +1,6 @@
+[general]
+floating-hack = true
+early-exit = true
+copy-command = "wl-copy"
+save-after-copy = false
+initial-tool = "arrow"
