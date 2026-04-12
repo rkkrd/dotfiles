@@ -3,7 +3,6 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
-
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -217,6 +216,9 @@ bindsym $mod+r mode "resize"
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
+
+exec snixembed --fork
+
 bar {
     #swaybar replaced with waybar
     swaybar_command waybar
@@ -228,14 +230,14 @@ bar {
 }
 
 # set wallpaper
-exec swaybg -o "*" -i /home/rekkord/Pictures/corrected-noellepaper.png -m fill
+exec swaybg -o "*" -i /home/rekkord/Pictures/crane.png -m fill
 
 # set focused window border w/ color
 set $focusedColor #b4befe
 set $nonfocus #6c7086
 set $urgent #eba0ac
-default_border pixel 2px
-default_floating_border pixel 2px
+default_border pixel 1px
+default_floating_border pixel 1px
 # class                 border  background text   indicator child_border
 client.focused          #b4befe #b4befe #b4befe #b4befe #b4befe
 client.focused_inactive #313244 #313244 #313244 #313244 #313244
